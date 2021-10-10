@@ -1,0 +1,108 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.3
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: real_examples._type
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.width
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.height
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.format
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.count
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.captions
+      5: 1
+      6:
+      - 1
+    - 1: val_logits._type
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.values
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.bins
+      5: 1
+      6:
+      - 1
+    - 1: global_step
+      5: 1
+      6:
+      - 1
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.10
+    start_time: 1633213616
+    t:
+      1:
+      - 1
+      - 9
+      3:
+      - 13
+      4: 3.8.10
+      5: 0.12.3
+      8:
+      - 2
+      - 5
+accumulate_grad_batches:
+  desc: null
+  value: 1
+classification:
+  desc: null
+  value: true
+drop_path_rate:
+  desc: null
+  value: 0.25
+drop_rate:
+  desc: null
+  value: 0.25
+epochs:
+  desc: null
+  value: 20
+lr:
+  desc: null
+  value: 0.0001
+mixup_alpha:
+  desc: null
+  value: 1.0
+mixup_p:
+  desc: null
+  value: 0.5
+model_name:
+  desc: null
+  value: resnet34d
+wd:
+  desc: null
+  value: 0.0001

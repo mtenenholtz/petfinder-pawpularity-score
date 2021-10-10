@@ -1,0 +1,2856 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.4
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: real_examples._type
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.width
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.height
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.format
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.count
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.captions
+      5: 1
+      6:
+      - 1
+    - 1: val_logits._type
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.values
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.bins
+      5: 1
+      6:
+      - 1
+    - 1: global_step
+      5: 1
+      6:
+      - 1
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.16\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.15\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.14\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.13\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.12\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.11\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.10\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.9\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.8\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.7\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.6\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.5\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.4\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.se\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.3\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.2\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.1\.conv_exp\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_pwl\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.features\.0\.conv_dw\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.bn\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.conv\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.conv\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.conv\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_epoch
+      5: 1
+      6:
+      - 1
+    - 1: val_bce_loss
+      5: 1
+      6:
+      - 1
+    - 1: val_rmse_loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.10
+    start_time: 1633839713
+    t:
+      1:
+      - 1
+      - 9
+      3:
+      - 13
+      4: 3.8.10
+      5: 0.12.4
+      8:
+      - 2
+      - 5
+accumulate_grad_batches:
+  desc: null
+  value: 1
+classification:
+  desc: null
+  value: true
+cutmix:
+  desc: null
+  value: false
+cutmix_alpha:
+  desc: null
+  value: 0.5
+cutmix_p:
+  desc: null
+  value: 0.5
+drop_path_rate:
+  desc: null
+  value: 0.0
+drop_rate:
+  desc: null
+  value: 0.0
+epochs:
+  desc: null
+  value: 20
+lr:
+  desc: null
+  value: 0.0001
+mixup:
+  desc: null
+  value: true
+mixup_alpha:
+  desc: null
+  value: 0.5
+mixup_p:
+  desc: null
+  value: 0.5
+model_name:
+  desc: null
+  value: rexnet_130
+wd:
+  desc: null
+  value: 0.0001

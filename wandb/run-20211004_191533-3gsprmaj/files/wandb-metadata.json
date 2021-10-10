@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.4.0-87-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2021-10-04T23:15:35.408888",
+    "startedAt": "2021-10-04T23:15:33.512807",
+    "docker": null,
+    "gpu": "GeForce RTX 2070",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": "10.2.89",
+    "args": [
+        "--model_name",
+        "swin_tiny_patch4_window7_224",
+        "--name",
+        "hue_aug",
+        "--batch_size",
+        "32",
+        "--lr",
+        "1e-5",
+        "--wd",
+        "0"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/mtenenholtz/petfinder-pawpularity-score.git",
+        "commit": "fb00ab190c62d22423c3697a085da5a14ad94206"
+    },
+    "email": "marktenenholtz@gmail.com",
+    "root": "/home/mten/projects/kaggle/petfinder-pawpularity-score",
+    "host": "anton",
+    "username": "mten",
+    "executable": "/home/mten/anaconda3/envs/kaggle/bin/python"
+}

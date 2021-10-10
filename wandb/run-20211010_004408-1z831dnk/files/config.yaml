@@ -1,0 +1,3660 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.4
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: real_examples._type
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.width
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.height
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.format
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.count
+      5: 1
+      6:
+      - 1
+    - 1: real_examples.captions
+      5: 1
+      6:
+      - 1
+    - 1: val_logits._type
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.values
+      5: 1
+      6:
+      - 1
+    - 1: val_logits.bins
+      5: 1
+      6:
+      - 1
+    - 1: global_step
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/head\.1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.23\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.22\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.21\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.20\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.19\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.18\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.17\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.16\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.15\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.14\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.13\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.12\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.11\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.10\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.9\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.8\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.7\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.6\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.5\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.4\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.3\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.2\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.1\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_channels\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc2\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.mlp_tokens\.fc1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.blocks\.0\.norm1\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/backbone\.net\.stem\.proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_epoch
+      5: 1
+      6:
+      - 1
+    - 1: val_bce_loss
+      5: 1
+      6:
+      - 1
+    - 1: val_rmse_loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.10
+    start_time: 1633841048
+    t:
+      1:
+      - 1
+      - 9
+      3:
+      - 13
+      4: 3.8.10
+      5: 0.12.4
+      8:
+      - 2
+      - 5
+accumulate_grad_batches:
+  desc: null
+  value: 4
+classification:
+  desc: null
+  value: true
+cutmix:
+  desc: null
+  value: false
+cutmix_alpha:
+  desc: null
+  value: 0.5
+cutmix_p:
+  desc: null
+  value: 0.5
+drop_path_rate:
+  desc: null
+  value: 0.0
+drop_rate:
+  desc: null
+  value: 0.0
+epochs:
+  desc: null
+  value: 20
+lr:
+  desc: null
+  value: 1.0e-05
+mixup:
+  desc: null
+  value: true
+mixup_alpha:
+  desc: null
+  value: 0.5
+mixup_p:
+  desc: null
+  value: 0.5
+model_name:
+  desc: null
+  value: mixer_l16_224
+wd:
+  desc: null
+  value: 0.0
