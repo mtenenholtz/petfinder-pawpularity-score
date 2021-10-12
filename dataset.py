@@ -6,11 +6,13 @@ import pytorch_lightning as pl
 import torch
 
 class Dataset(Dataset):
-    def __init__(self, img_ids, targets=None, img_size=(224, 224), interpolation=T.InterpolationMode.BILINEAR):
+    def __init__(self, img_ids, targets=None, img_size=(224, 224), interpolation=T.InterpolationMode.BILINEAR, inference=False):
         self.img_ids = img_ids
         self.targets = targets
-        self.resize = T.Resize(img_size, interpolation=interpolation, antialias=True)
-        #self.resize = T.RandomResizedCrop(img_size)
+        if inference:
+            self.resize = T.Resize(img_size, interpolation=interpolation, antialias=True)
+        else:
+            self.resize = T.RandomResizedCrop(img_size, scale=(0.5, 1.0))
 
     def __len__(self):
         return self.img_ids.shape[0]
@@ -55,13 +57,13 @@ class DataModule(pl.LightningDataModule):
         train_dset = Dataset(img_ids, targets, img_size=self.img_size, interpolation=self.interpolation)
         return DataLoader(
             train_dset, shuffle=True, num_workers=4,
-            pin_memory=True, batch_size=self.batch_size,
+            pin_memory=True, batch_size=self.batch_size, drop_last=True
         )
 
     def val_dataloader(self):
         img_ids = self.val_df['file_path'].values
         targets = self.val_df['Pawpularity'].values
-        val_dset = Dataset(img_ids, targets, img_size=self.img_size, interpolation=self.interpolation)
+        val_dset = Dataset(img_ids, targets, img_size=self.img_size, interpolation=self.interpolation, inference=True)
         return DataLoader(
             val_dset, shuffle=False, num_workers=4,
             pin_memory=True, batch_size=self.batch_size,
@@ -72,8 +74,8 @@ class DataModule(pl.LightningDataModule):
 
     def predict_dataloader(self):
         img_ids = self.data['file_path'].values
-        pred_dset = Dataset(img_ids, img_size=self.img_size, interpolation=self.interpolation)
+        pred_dset = Dataset(img_ids, img_size=self.img_size, interpolation=self.interpolation, inference=True)
         return DataLoader(
-            pred_dset, shuffle=False, num_workers=2,
+            pred_dset, shuffle=False, num_workers=4,
             pin_memory=True, batch_size=self.batch_size,
         )

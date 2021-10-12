@@ -10,6 +10,7 @@ from pytorch_lightning.loggers import WandbLogger
 import pandas as pd
 import numpy as np
 import torch
+import torchvision.transforms as T
 import pytorch_lightning as pl
 import argparse
 import wandb

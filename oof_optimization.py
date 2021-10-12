@@ -23,9 +23,10 @@ oof_dict = {
     'model3': 'data/oof_preds/swin_tiny_patch4_window7_224-mixup=0.5.csv',
     'model4': 'data/oof_preds/eca_nfnet_l2-mixup=0.5.csv',
     'model5': 'data/oof_preds/eca_nfnet_l2-img_size=320x320.csv',
-    # 'model6': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-mixup=0.5.csv',
-    # 'model7': 'data/oof_preds/xcit_medium_24_p8_224_dist-seed-34-mixup=0.5.csv',
-    # 'model8': 'data/oof_preds/eca_nfnet_l2-seed-34-img_size=512x512.csv',
+    'model6': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-mixup=0.5.csv',
+    'model7': 'data/oof_preds/xcit_medium_24_p8_224_dist-seed-34-mixup=0.5.csv',
+    'model8': 'data/oof_preds/eca_nfnet_l2-seed-34-img_size=512x512.csv',
+    'model9': 'data/oof_preds/eca_nfnet_l2-seed-34-random_resize.csv'
 }
 
 data_dir = 'data'
