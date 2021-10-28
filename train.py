@@ -45,13 +45,6 @@ img_path = 'crop' if args.cropped_imgs else 'train'
 train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
 train_df['file_path'] = f'{data_dir}/{img_path}/' + train_df['Id'] + '.jpg'
 
-if args.interpolation == 'bilinear':
-    interpolation = T.InterpolationMode.BILINEAR
-elif args.interpolation == 'bicubic':
-    interpolation = T.InterpolationMode.BICUBIC
-else:
-    raise ValueError
-
 hparams = {
     'model_name': args.model_name,
     'epochs': args.max_epochs,
@@ -78,7 +71,7 @@ for i in range(5):
     dm = DataModule(
         train_df, img_size=(args.img_size_x, args.img_size_y), 
         train_filter=train_filter, val_filter=val_filter, 
-        batch_size=args.batch_size, interpolation=interpolation,
+        batch_size=args.batch_size,
     )
 
     model = PetFinderModel(**hparams, pretrained=True)

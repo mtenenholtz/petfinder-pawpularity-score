@@ -8,27 +8,6 @@ import pytorch_lightning as pl
 import numpy as np
 import wandb
 
-IMAGENET_MEAN = [0.485, 0.456, 0.406]
-IMAGENET_STD = [0.229, 0.224, 0.225]
-
-def get_default_transforms():
-    transform = {
-        'train': T.Compose(
-            [
-                T.RandomHorizontalFlip(),
-                T.RandomAffine(15, translate=(0.1, 0.1), scale=(0.9, 1.1)),
-                T.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
-                T.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
-            ]
-        ),
-        'val': T.Compose(
-            [
-                T.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
-            ]
-        ),
-    }
-    return transform
-
 class PetFinderModel(pl.LightningModule):
     def __init__(
         self, model_name, epochs, lr, wd, 
@@ -46,7 +25,7 @@ class PetFinderModel(pl.LightningModule):
         self.global_pool = nn.AdaptiveAvgPool2d(1)
         self.head = nn.Sequential(
             nn.Dropout(0.5), 
-            nn.Linear(self.backbone.out_features, 1),
+            nn.Linear(self.backbone.out_features, 1)
         )
 
         self.classification = classification
@@ -56,10 +35,6 @@ class PetFinderModel(pl.LightningModule):
             self.loss_fn = nn.BCEWithLogitsLoss()
         else:
             self.loss_fn = nn.MSELoss()
-
-        tfms = get_default_transforms()
-        self.train_tfms = tfms['train']
-        self.val_tfms = tfms['val']
 
         self.best_bce_loss = None
         self.best_rmse_loss = None
@@ -94,7 +69,6 @@ class PetFinderModel(pl.LightningModule):
 
     def training_step(self, batch, batch_idx):
         images, targets = batch['images'], batch['targets']
-        images = self.train_tfms(images)
 
         if self.hparams.mixup and torch.rand(1)[0] < self.hparams.mixup_p:
             mix_images, target_a, target_b, lam = mixup(images, targets/100., alpha=self.hparams.mixup_alpha)
@@ -115,7 +89,6 @@ class PetFinderModel(pl.LightningModule):
 
     def validation_step(self, batch, batch_idx):
         images, targets = batch['images'], batch['targets']
-        images = self.val_tfms(images)
 
         logits = self(images)
         bce_logits, rmse_logits = (logits, torch.sigmoid(logits)*100) if self.classification else (0, logits)
@@ -163,7 +136,6 @@ class PetFinderModel(pl.LightningModule):
 
     def predict_step(self, batch, batch_idx, dataloader_idx):
         images = batch['images']
-        images = self.val_tfms(images)
 
         logits = self(images)
 
@@ -194,7 +166,6 @@ class PetFinderEmbeddingsModel(PetFinderModel):
 
     def predict_step(self, batch, batch_idx, dataloader_idx):
         images = batch['images']
-        images = self.val_tfms(images)
 
         logits = self(images)
 

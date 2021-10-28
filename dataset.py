@@ -1,26 +1,60 @@
 from torch.utils.data import Dataset, DataLoader
+from albumentations.pytorch import ToTensorV2
+from augmix import RandomAugMix
 
-import torchvision.transforms as T
+import albumentations as A
 import torchvision.io as io
 import pytorch_lightning as pl
 import torch
+import cv2
+
+def get_default_transforms(img_size):
+    transform = {
+        'train': A.Compose([
+            A.HorizontalFlip(p=0.5),
+            A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
+            A.ShiftScaleRotate(shift_limit=0.2, scale_limit=0.2, rotate_limit=10, border_mode=0, p=0.7),
+            A.CoarseDropout(max_height=int(img_size[0] * 0.2), max_width=int(img_size[1] * 0.2), min_holes=1, p=0.5),
+            A.Resize(img_size[0], img_size[0]),
+            A.Normalize(
+                mean=[0.485, 0.456, 0.406],
+                std=[0.229, 0.224, 0.225],
+                max_pixel_value=255.0,
+                p=1.0,
+            ),
+            ToTensorV2()
+        ]),
+        'inference': A.Compose([
+            A.Resize(img_size[0], img_size[0]),
+            A.Normalize(
+                mean=[0.485, 0.456, 0.406],
+                std=[0.229, 0.224, 0.225],
+                max_pixel_value=255.0,
+                p=1.0,
+            ),
+            ToTensorV2()
+        ]),
+    }
+    return transform
 
 class Dataset(Dataset):
-    def __init__(self, img_ids, targets=None, img_size=(224, 224), interpolation=T.InterpolationMode.BILINEAR, inference=False):
+    def __init__(self, img_ids, targets=None, img_size=(224, 224), inference=False):
         self.img_ids = img_ids
         self.targets = targets
         if inference:
-            self.resize = T.Resize(img_size, interpolation=interpolation, antialias=True)
+            self.augs = get_default_transforms(img_size)['inference']
         else:
-            self.resize = T.RandomResizedCrop(img_size, scale=(0.5, 1.0))
+            self.augs = get_default_transforms(img_size)['train']
 
     def __len__(self):
         return self.img_ids.shape[0]
 
     def __getitem__(self, i):
-        image = io.read_image(self.img_ids[i]).float()
-        image /= 255.
-        image = self.resize(image)
+        image = cv2.imread(self.img_ids[i])
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        
+        image = self.augs(image=image)['image']
+            
         if self.targets is not None:
             target = torch.as_tensor(self.targets[i]).float()
             return {
@@ -35,7 +69,6 @@ class DataModule(pl.LightningDataModule):
         self, data, img_size=(224, 224), 
         train_filter=None, val_filter=None, 
         batch_size=64, inference=False,
-        interpolation=T.InterpolationMode.BILINEAR
     ):
         super().__init__()
         self.data = data
@@ -44,7 +77,6 @@ class DataModule(pl.LightningDataModule):
         self.val_filter = val_filter
         self.batch_size = batch_size
         self.inference = inference
-        self.interpolation = interpolation
 
     def setup(self, stage=None):
         if not self.inference:
@@ -54,7 +86,7 @@ class DataModule(pl.LightningDataModule):
     def train_dataloader(self):
         img_ids = self.train_df['file_path'].values
         targets = self.train_df['Pawpularity'].values
-        train_dset = Dataset(img_ids, targets, img_size=self.img_size, interpolation=self.interpolation)
+        train_dset = Dataset(img_ids, targets, img_size=self.img_size)
         return DataLoader(
             train_dset, shuffle=True, num_workers=4,
             pin_memory=True, batch_size=self.batch_size, drop_last=True
@@ -63,7 +95,7 @@ class DataModule(pl.LightningDataModule):
     def val_dataloader(self):
         img_ids = self.val_df['file_path'].values
         targets = self.val_df['Pawpularity'].values
-        val_dset = Dataset(img_ids, targets, img_size=self.img_size, interpolation=self.interpolation, inference=True)
+        val_dset = Dataset(img_ids, targets, img_size=self.img_size, inference=True)
         return DataLoader(
             val_dset, shuffle=False, num_workers=4,
             pin_memory=True, batch_size=self.batch_size,
@@ -74,7 +106,7 @@ class DataModule(pl.LightningDataModule):
 
     def predict_dataloader(self):
         img_ids = self.data['file_path'].values
-        pred_dset = Dataset(img_ids, img_size=self.img_size, interpolation=self.interpolation, inference=True)
+        pred_dset = Dataset(img_ids, img_size=self.img_size, inference=True)
         return DataLoader(
             pred_dset, shuffle=False, num_workers=4,
             pin_memory=True, batch_size=self.batch_size,

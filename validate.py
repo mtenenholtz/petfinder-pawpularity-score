@@ -32,11 +32,6 @@ data_dir = 'data'
 train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
 train_df['file_path'] = f'{data_dir}/train/' + train_df['Id'] + '.jpg'
 
-if args.interpolation == 'bilinear':
-    interpolation = T.InterpolationMode.BILINEAR
-elif args.interpolation == 'bicubic':
-    interpolation = T.InterpolationMode.BICUBIC
-
 model_paths = [p for p in os.listdir('ckpts/') if p.startswith(args.model_name + '-fold')]
 model_paths = sorted(model_paths)
 [print(p) for p in model_paths]
@@ -50,7 +45,7 @@ for i in range(5):
     pred_df = train_df.loc[train_df['fold'] == i, :]
     dm = DataModule(
         pred_df, img_size=(args.img_size_x, args.img_size_y), 
-        batch_size=args.batch_size, inference=True, interpolation=interpolation
+        batch_size=args.batch_size, inference=True
     )
 
     model = models[i]

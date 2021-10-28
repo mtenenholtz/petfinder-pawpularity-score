@@ -16,7 +16,6 @@ class LogPredictionsCallback(Callback):
         # Let's log 20 sample image predictions from first batch
         if batch_idx == 0:
             images, targets = batch['images'].cuda(), batch['targets'].cuda()
-            images = pl_module.val_tfms(images)
             targets = targets/100. if pl_module.classification else targets
 
             logits = pl_module(images)
