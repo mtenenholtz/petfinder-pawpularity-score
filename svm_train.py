@@ -5,6 +5,7 @@ from sklearn.metrics import mean_squared_error
 import pandas as pd
 import numpy as np
 import argparse
+import pickle
 import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser()
@@ -46,9 +47,12 @@ data['preds'] /= 2.
 rmse = mean_squared_error(data['Pawpularity'].values, data['preds'].values, squared=False)
 print(f'Ensembled MSE: {rmse}')
 
+pickle.dump(svm, open(f'svm_models/{args.model_name}.pkl', 'wb'))
+data[['Id', 'preds']].to_csv(f'data/svm_oofs/{args.model_name}_svm.csv', index=False)
+
 if args.param_search:
     rmses = []
-    for c in range(1, 50):
+    for c in tqdm(range(1, 50)):
         data['preds'] = 0.
         for i in range(5):
             train_df = data.loc[data['fold'] != i, :]

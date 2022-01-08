@@ -14,7 +14,8 @@ def create_folds(data, num_splits):
     # calculate number of bins by Sturge's rule
     # I take the floor of the value, you can also
     # just round it
-    num_bins = int(np.floor(1 + np.log2(len(data))))
+    #num_bins = int(np.floor(1 + np.log2(len(data))))
+    num_bins = int(np.floor(1+(3.3)*(np.log2(len(data)))))
     
     # bin targets
     data.loc[:, 'bins'] = pd.cut(
@@ -36,10 +37,11 @@ def create_folds(data, num_splits):
     return data
 
 df = pd.read_csv('data/train.csv')
-#df = create_folds(df, num_splits=5)
+# df = create_folds(df, num_splits=5)
 
+seed = 26
 skf = model_selection.StratifiedKFold(
-    n_splits=5, shuffle=True, random_state=34
+    n_splits=5, shuffle=True, random_state=seed
 )
 
 df['fold'] = -1
@@ -47,4 +49,4 @@ for i, (train_idx, val_idx) in enumerate(skf.split(df['Id'], df['Pawpularity']))
     df.loc[val_idx, 'fold'] = i
 
 print(df.fold.value_counts())
-df.to_csv('data/train_folds.csv', index=False)
+df.to_csv(f'data/train_folds_seed_{seed}.csv', index=False)

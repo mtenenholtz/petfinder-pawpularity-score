@@ -104,3 +104,14 @@ class Backbone(nn.Module):
         x = self.net.forward_features(x)
 
         return x
+
+def divide_norm_bias(model): 
+    norm_bias_params = []
+    non_norm_bias_params = []
+    except_wd_layers = ['norm', '.bias']
+    for n, p in model.named_parameters():
+        if any([nd in n for nd in except_wd_layers]):
+            norm_bias_params.append(p)
+        else:
+            non_norm_bias_params.append(p)
+    return norm_bias_params, non_norm_bias_params
