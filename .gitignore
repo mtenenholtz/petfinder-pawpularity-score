@@ -132,3 +132,4 @@ data/
 ckpts/
 wandb/
 lightning_logs/
+svm_models/
