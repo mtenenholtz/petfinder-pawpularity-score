@@ -105,12 +105,12 @@ for i in range(n_folds):
     
     #pseudo_df = pseudo_df[(pseudo_df['Pawpularity'] < 10) | (pseudo_df['Pawpularity'] > 90)]
     
-    train_df = pd.concat([train_df, pseudo_df], ignore_index=True)
+    train_df_fold = pd.concat([train_df, pseudo_df], ignore_index=True)
 
-    train_filter = train_df['fold'] != i
-    val_filter = train_df['fold'] == i
+    train_filter = train_df_fold['fold'] != i
+    val_filter = train_df_fold['fold'] == i
     dm = DataModule(
-        train_df, img_size=(args.img_size_x, args.img_size_y), 
+        train_df_fold, img_size=(args.img_size_x, args.img_size_y), 
         train_filter=train_filter, val_filter=val_filter, 
         batch_size=args.batch_size,
     )
