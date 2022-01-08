@@ -1,6 +1,7 @@
 from torch.utils.data import Dataset, DataLoader
 from albumentations.pytorch import ToTensorV2
 from augmix import RandomAugMix
+from utils import in_colab
 
 import albumentations as A
 import torchvision.io as io
@@ -88,7 +89,7 @@ class DataModule(pl.LightningDataModule):
         targets = self.train_df['Pawpularity'].values
         train_dset = Dataset(img_ids, targets, img_size=self.img_size)
         return DataLoader(
-            train_dset, shuffle=True, num_workers=4,
+            train_dset, shuffle=True, num_workers=2 if in_colab() else 4,
             pin_memory=True, batch_size=self.batch_size, drop_last=True
         )
 
@@ -97,7 +98,7 @@ class DataModule(pl.LightningDataModule):
         targets = self.val_df['Pawpularity'].values
         val_dset = Dataset(img_ids, targets, img_size=self.img_size, inference=True)
         return DataLoader(
-            val_dset, shuffle=False, num_workers=4,
+            val_dset, shuffle=False, num_workers=2 if in_colab() else 4,
             pin_memory=True, batch_size=self.batch_size,
         )
 
@@ -108,6 +109,6 @@ class DataModule(pl.LightningDataModule):
         img_ids = self.data['file_path'].values
         pred_dset = Dataset(img_ids, img_size=self.img_size, inference=True)
         return DataLoader(
-            pred_dset, shuffle=False, num_workers=4,
+            pred_dset, shuffle=False, num_workers=2 if in_colab() else 4,
             pin_memory=True, batch_size=self.batch_size,
         )

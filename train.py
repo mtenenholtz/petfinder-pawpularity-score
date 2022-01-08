@@ -77,6 +77,7 @@ for i in range(5):
 
     model = PetFinderModel(**hparams, pretrained=True)
 
+    ckpt_dirpath = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/' if not in_colab() else 'drive/MyDrive/Kaggle/petfinder-pawpularity/ckpts/'
     ckpt = ModelCheckpoint(
         dirpath='/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/', 
         monitor='val_rmse_loss', mode='min', 
