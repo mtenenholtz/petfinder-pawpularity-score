@@ -23,20 +23,23 @@ parser.add_argument('--img_size_x', type=int, default=224)
 parser.add_argument('--img_size_y', type=int, default=224)
 parser.add_argument('--interpolation', type=str, default='bilinear')
 parser.add_argument('--seed', type=int, default=34)
+parser.add_argument('--data_seed', type=int, default=34)
 
 args = parser.parse_args()
 
 pl.seed_everything(args.seed);
 
 data_dir = 'data'
-train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
+train_df = pd.read_csv(f'{data_dir}/train_folds_seed_{args.data_seed}.csv')
 train_df['file_path'] = f'{data_dir}/train/' + train_df['Id'] + '.jpg'
 
-model_paths = [p for p in os.listdir('ckpts/') if p.startswith(args.model_name + '-fold')]
+ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts'
+
+model_paths = [p for p in os.listdir(f'{ckpt_path}/') if p.startswith(args.model_name + '-fold')]
 model_paths = sorted(model_paths)
 [print(p) for p in model_paths]
 assert len(model_paths) == 5
-models = [PetFinderModel.load_from_checkpoint(f'ckpts/{p}') for p in model_paths]
+models = [PetFinderModel.load_from_checkpoint(f'{ckpt_path}/{p}') for p in model_paths]
 for model in models:
     model.freeze();
 

@@ -1,4 +1,4 @@
-from model_utils import GeM, Backbone, mixup, cutmix
+from model_utils import GeM, Backbone, mixup, cutmix, divide_norm_bias
 
 import torch
 import torch.nn as nn
@@ -15,7 +15,7 @@ class PetFinderModel(pl.LightningModule):
         drop_rate, drop_path_rate,
         mixup, mixup_p, mixup_alpha,
         cutmix, cutmix_p, cutmix_alpha,
-        classification=True, 
+        classification=True,
         pretrained=False
     ):
         super().__init__()
@@ -24,7 +24,7 @@ class PetFinderModel(pl.LightningModule):
         self.backbone = Backbone(model_name, pretrained=pretrained, drop_rate=drop_rate, drop_path_rate=drop_path_rate)
         self.global_pool = nn.AdaptiveAvgPool2d(1)
         self.head = nn.Sequential(
-            nn.Dropout(0.5), 
+            #nn.Dropout(0.5), 
             nn.Linear(self.backbone.out_features, 1)
         )
 
@@ -38,7 +38,7 @@ class PetFinderModel(pl.LightningModule):
 
         self.best_bce_loss = None
         self.best_rmse_loss = None
-
+        
         transformer_models = ['swin', 'vit', 'xcit', 'cait', 'mixer', 'resmlp']
         if any([t in model_name for t in transformer_models]):
             self.transformer = True
@@ -53,21 +53,26 @@ class PetFinderModel(pl.LightningModule):
 
     def setup(self, stage):
         if stage == 'fit':
-            train_batches = len(self.train_dataloader())
+            train_batches = len(self.trainer.datamodule.train_dataloader())
             self.train_steps = (self.hparams.epochs * train_batches) // self.hparams.accumulate_grad_batches
 
     def configure_optimizers(self):
-        optimizer = torch.optim.AdamW(self.parameters(), lr=self.hparams.lr, weight_decay=self.hparams.wd)
+        norm_bias_params, non_norm_bias_params = divide_norm_bias(self)
+        optimizer = torch.optim.AdamW([
+            {'params': norm_bias_params, 'weight_decay': self.hparams.wd},
+            {'params': non_norm_bias_params, 'weight_decay': 0.},
+        ], lr=self.hparams.lr)
+        #optimizer = torch.optim.AdamW(self.parameters(), lr=self.hparams.lr)
         return {
             'optimizer': optimizer,
             'lr_scheduler': {
-                'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-6),
+                'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-7),
                 'monitor': 'val_loss',
                 'interval': 'step'
             }
         }
-
-    def training_step(self, batch, batch_idx):
+        
+    def _take_training_step(self, batch, batch_idx):
         images, targets = batch['images'], batch['targets']
 
         if self.hparams.mixup and torch.rand(1)[0] < self.hparams.mixup_p:
@@ -83,7 +88,13 @@ class PetFinderModel(pl.LightningModule):
         else:
             logits = self(images)
             loss = self.bce_loss(logits.squeeze(1), targets/100.)
+            
+        return loss
+        
 
+    def training_step(self, batch, batch_idx):
+        loss = self._take_training_step(batch, batch_idx)
+        
         self.log('train_loss', loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         return loss
 
@@ -101,12 +112,13 @@ class PetFinderModel(pl.LightningModule):
         }
 
     def validation_epoch_end(self, val_step_outputs):
-        flattened_preds = torch.cat([v['preds'] for v in val_step_outputs], dim=0)
+        flattened_preds = torch.cat([torch.atleast_2d(v['preds']) for v in val_step_outputs], dim=0)
         flattened_preds_np = flattened_preds.detach().cpu().numpy()
         self.logger.experiment.log({
             'val_logits': wandb.Histogram(flattened_preds_np[~np.isnan(flattened_preds_np)]),
             'global_step': self.global_step
         })
+        print('here1')
 
         bce_logits = []
         rmse_logits = []
@@ -116,12 +128,16 @@ class PetFinderModel(pl.LightningModule):
             rmse_logits.append(out['rmse_logits'])
             targets.append(out['targets'])
 
+        print('here2')
         bce_logits, rmse_logits, targets = torch.cat(bce_logits), torch.cat(rmse_logits), torch.cat(targets)
 
         bce_loss = self.bce_loss(bce_logits.squeeze().detach(), targets/100.)
+        print('here3')
         rmse_loss = torch.sqrt(((rmse_logits.squeeze().detach() - targets) ** 2).mean())
+        print('here4')
         self.log('val_bce_loss', bce_loss, prog_bar=True)
         self.log('val_rmse_loss', rmse_loss, prog_bar=True)
+        print('here5')
 
         if self.best_bce_loss is not None:
             if bce_loss < self.best_bce_loss:
@@ -134,7 +150,7 @@ class PetFinderModel(pl.LightningModule):
         else:
             self.best_rmse_loss = rmse_loss
 
-    def predict_step(self, batch, batch_idx, dataloader_idx):
+    def predict_step(self, batch, batch_idx):
         images = batch['images']
 
         logits = self(images)
@@ -164,7 +180,7 @@ class PetFinderEmbeddingsModel(PetFinderModel):
     def forward(self, x):
         return self.backbone(x)
 
-    def predict_step(self, batch, batch_idx, dataloader_idx):
+    def predict_step(self, batch, batch_idx):
         images = batch['images']
 
         logits = self(images)

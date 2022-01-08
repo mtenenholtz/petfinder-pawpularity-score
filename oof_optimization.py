@@ -1,6 +1,7 @@
 from scipy.optimize import minimize
 from time import time
 from sklearn.metrics import mean_squared_error
+from pprint import pprint
 
 import pandas as pd
 import numpy as np
@@ -17,16 +18,41 @@ def metric(weights):
     return score
 
 
+# oof_dict = {
+#     # 'model1': 'data/oof_preds/swin_large_patch4_window7_224_in22k-mixup=0.5.csv',
+#     # 'model2': 'data/oof_preds/swin_base_patch4_window7_224_in22k-mixup=0.5.csv',
+#     #'model3': 'data/oof_preds/swin_tiny_patch4_window7_224-mixup=0.5.csv',
+#     #'model4': 'data/oof_preds/eca_nfnet_l2-mixup=0.5.csv',
+#     #'model5': 'data/oof_preds/eca_nfnet_l2-img_size=320x320.csv',
+#     # 'model6': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-mixup=0.5.csv',
+#     #'model7': 'data/oof_preds/xcit_medium_24_p8_224_dist-seed-34-mixup=0.5.csv',
+#     # 'model8': 'data/oof_preds/eca_nfnet_l2-seed-34-img_size=512x512.csv',
+#     'model9': 'data/oof_preds/eca_nfnet_l2-seed-34-random_resize.csv',
+#     # 'model10': 'data/svm_oofs/swin_base_patch4_window12_384_in22k-seed-34-random_resize_svm.csv',
+#     'model11': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-random_resize.csv',
+#     # 'model12': 'data/svm_oofs/swin_large_patch4_window7_224_in22k-mixup=0.5_svm.csv',
+#     'model13': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-26-random_resize.csv',
+#     'model14': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-42-random_resize.csv',
+#     'model15': 'data/oof_preds/eca_nfnet_l2-seed-42-random_crop.csv',
+#     #'model16': 'data/oof_preds/eca_nfnet_l2-seed-26-random_crop.csv',
+# }
 oof_dict = {
-    'model1': 'data/oof_preds/swin_large_patch4_window7_224_in22k-mixup=0.5.csv',
-    'model2': 'data/oof_preds/swin_base_patch4_window7_224_in22k-mixup=0.5.csv',
-    'model3': 'data/oof_preds/swin_tiny_patch4_window7_224-mixup=0.5.csv',
-    'model4': 'data/oof_preds/eca_nfnet_l2-mixup=0.5.csv',
-    'model5': 'data/oof_preds/eca_nfnet_l2-img_size=320x320.csv',
-    'model6': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-mixup=0.5.csv',
-    'model7': 'data/oof_preds/xcit_medium_24_p8_224_dist-seed-34-mixup=0.5.csv',
-    'model8': 'data/oof_preds/eca_nfnet_l2-seed-34-img_size=512x512.csv',
-    'model9': 'data/oof_preds/eca_nfnet_l2-seed-34-random_resize.csv'
+    # 'model1': 'data/oof_preds/eca_nfnet_l2-seed-34-random_resize.csv',
+    'model1': 'data/oof_preds/eca_nfnet_l2-seed-34-random_crop.csv',
+    'model2': 'data/oof_preds/eca_nfnet_l2-seed-42-random_crop.csv',
+    'model3': 'data/oof_preds/eca_nfnet_l2-seed-26-random_crop.csv',
+    'model4': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-34-random_resize.csv',
+    'model5': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-42-random_resize.csv',
+    'model6': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-26-random_resize.csv',
+    'model7': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-34-random_resize.csv',
+    'model8': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-42-random_resize.csv',
+    'model9': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-26-random_resize.csv',
+    'model10': 'data/oof_preds/eca_nfnet_l2-seed-4242-random_crop.csv',
+    'model11': 'data/oof_preds/eca_nfnet_l2-seed-2626-random_crop.csv',
+    'model12': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-4242-random_resize.csv',
+    'model13': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-2626-random_resize.csv',
+    'model14': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-4242-random_resize.csv',
+    'model15': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-2626-random_resize.csv',
 }
 
 data_dir = 'data'
@@ -93,4 +119,4 @@ for i, (k, v) in enumerate(oof_dict.items()):
     model_name = v.split('/')[-1].split('.csv')[0].replace('=', '')
     weight_dict[model_name] = weights[i]
 
-print(weight_dict)
+pprint(weight_dict)

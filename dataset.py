@@ -13,9 +13,8 @@ def get_default_transforms(img_size):
         'train': A.Compose([
             A.HorizontalFlip(p=0.5),
             A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
-            A.ShiftScaleRotate(shift_limit=0.2, scale_limit=0.2, rotate_limit=10, border_mode=0, p=0.7),
-            A.CoarseDropout(max_height=int(img_size[0] * 0.2), max_width=int(img_size[1] * 0.2), min_holes=1, p=0.5),
-            A.Resize(img_size[0], img_size[0]),
+            A.SmallestMaxSize(max_size=img_size[0], p=1),
+            A.RandomCrop(height=img_size[0], width=img_size[1], p=1),
             A.Normalize(
                 mean=[0.485, 0.456, 0.406],
                 std=[0.229, 0.224, 0.225],
@@ -25,7 +24,8 @@ def get_default_transforms(img_size):
             ToTensorV2()
         ]),
         'inference': A.Compose([
-            A.Resize(img_size[0], img_size[0]),
+            A.SmallestMaxSize(max_size=img_size[0], p=1.0),
+            A.CenterCrop(height=img_size[0], width=img_size[1], p=1.0),
             A.Normalize(
                 mean=[0.485, 0.456, 0.406],
                 std=[0.229, 0.224, 0.225],

@@ -2,6 +2,7 @@ from dataset import DataModule
 from model import PetFinderModel
 from callbacks import LogPredictionsCallback
 from tqdm import tqdm
+from utils import in_colab
 
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, LearningRateMonitor
 from pytorch_lightning.loggers import WandbLogger
@@ -32,7 +33,7 @@ parser.add_argument('--batch_size', type=int, default=128)
 parser.add_argument('--accumulate_grad_batches', type=int, default=1)
 parser.add_argument('--grad_clip_val', type=float, default=1.0)
 parser.add_argument('--interpolation', type=str, default='bilinear')
-parser.add_argument('--max_epochs', type=int, default=20)
+parser.add_argument('--max_epochs', type=int, default=5)
 parser.add_argument('--seed', type=int, default=34)
 
 args = parser.parse_args()
@@ -42,7 +43,7 @@ wandb.login()
 
 data_dir = 'data'
 img_path = 'crop' if args.cropped_imgs else 'train'
-train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
+train_df = pd.read_csv(f'{data_dir}/train_folds_seed_{args.seed}.csv')
 train_df['file_path'] = f'{data_dir}/{img_path}/' + train_df['Id'] + '.jpg'
 
 hparams = {
@@ -76,20 +77,25 @@ for i in range(5):
 
     model = PetFinderModel(**hparams, pretrained=True)
 
-    ckpt = ModelCheckpoint(dirpath='ckpts/', monitor='val_rmse_loss', mode='min', filename=f'{args.model_name}-seed-{args.seed}-{args.name}-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}')
-    early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=5)
-    wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model='all', name=f'{args.model_name}-seed-{args.seed}-{args.name}-fold-{i}')
-    wandb_logger.watch(model)
+    ckpt = ModelCheckpoint(
+        dirpath='/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/', 
+        monitor='val_rmse_loss', mode='min', 
+        filename=f'{args.model_name}-seed-{args.seed}{args.seed}-{args.name}-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
+    )
+    early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=4)
+    wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model=False, name=f'{args.model_name}-seed-{args.seed}{args.seed}-{args.name}-fold-{i}')
+    wandb_logger.watch(model, log='all')
 
     trainer = pl.Trainer(
         gpus=-1, benchmark=True,
-        callbacks=[LearningRateMonitor(), ckpt, early_stop, LogPredictionsCallback(20)],
+        callbacks=[LearningRateMonitor(), ckpt, early_stop],
         logger=wandb_logger,
-        checkpoint_callback=True,
+        enable_checkpointing=True,
         accumulate_grad_batches=hparams['accumulate_grad_batches'],
         deterministic=True,
         gradient_clip_val=args.grad_clip_val,
         precision=16,
+        val_check_interval=0.25,
         max_epochs=args.max_epochs,
     )
 
