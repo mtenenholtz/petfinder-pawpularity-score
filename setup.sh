@@ -1,6 +1,3 @@
-mkdir drive
-python mount_drive.py
-
 pip install -U torch pytorch_lightning timm albumentations wandb opencv-python tqdm 
 wandb login
 

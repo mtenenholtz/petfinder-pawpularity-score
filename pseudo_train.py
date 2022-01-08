@@ -75,7 +75,7 @@ for i in range(n_folds):
     if args.fold != -1 and i != args.fold:
         continue
     
-    ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/' if not in_colab() else 'drive/MyDrive/Kaggle/petfinder-pawpularity/ckpts/'
+    ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/' if not in_colab() else '/content/drive/MyDrive/Kaggle/petfinder-pawpularity/ckpts/'
     ckpt_name = f'{args.model_name}-seed-{args.seed}-{args.name}-fold-{i}'
 
     model_paths = [p for p in os.listdir(f'{ckpt_path}/') if p.startswith(ckpt_name)]
