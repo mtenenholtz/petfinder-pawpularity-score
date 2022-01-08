@@ -118,7 +118,7 @@ for i in range(n_folds):
     model = PetFinderModel(**hparams, pretrained=True)
 
     ckpt = ModelCheckpoint(
-        dirpath='/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/', 
+        dirpath=ckpt_path, 
         monitor='val_rmse_loss', mode='min', 
         filename=f'{args.model_name}-seed-{args.seed}-{args.name}_pseudo-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
     )

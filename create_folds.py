@@ -39,7 +39,7 @@ def create_folds(data, num_splits):
 df = pd.read_csv('data/train.csv')
 # df = create_folds(df, num_splits=5)
 
-seed = 26
+seed = 34
 skf = model_selection.StratifiedKFold(
     n_splits=5, shuffle=True, random_state=seed
 )
@@ -49,4 +49,4 @@ for i, (train_idx, val_idx) in enumerate(skf.split(df['Id'], df['Pawpularity']))
     df.loc[val_idx, 'fold'] = i
 
 print(df.fold.value_counts())
-df.to_csv(f'data/train_folds_seed_{seed}.csv', index=False)
+df.to_csv(f'data/train_folds.csv', index=False)
