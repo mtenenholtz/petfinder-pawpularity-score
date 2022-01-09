@@ -24,13 +24,14 @@ parser.add_argument('--img_size_y', type=int, default=224)
 parser.add_argument('--interpolation', type=str, default='bilinear')
 parser.add_argument('--seed', type=int, default=34)
 parser.add_argument('--data_seed', type=int, default=34)
+parser.add_argument('--use_tta', action='store_true', default=False)
 
 args = parser.parse_args()
 
 pl.seed_everything(args.seed);
 
 data_dir = 'data'
-train_df = pd.read_csv(f'{data_dir}/train_folds_seed_{args.data_seed}.csv')
+train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
 train_df['file_path'] = f'{data_dir}/train/' + train_df['Id'] + '.jpg'
 
 ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts'

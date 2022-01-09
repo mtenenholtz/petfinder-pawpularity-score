@@ -1,4 +1,5 @@
 from model_utils import GeM, Backbone, mixup, cutmix, divide_norm_bias
+from dataset import get_default_transforms
 
 import torch
 import torch.nn as nn
@@ -151,9 +152,14 @@ class PetFinderModel(pl.LightningModule):
             self.best_rmse_loss = rmse_loss
 
     def predict_step(self, batch, batch_idx):
-        images = batch['images']
+        if 'images_1' in batch:
+            logits = 0.
+            for images in batch.values():
+                logits += self(images) / len(batch.values())
+        else:
+            images = batch['images']
 
-        logits = self(images)
+            logits = self(images)
 
         return torch.sigmoid(logits)*100. if self.classification else logits
 

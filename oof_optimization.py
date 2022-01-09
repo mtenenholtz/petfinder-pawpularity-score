@@ -53,6 +53,7 @@ oof_dict = {
     'model13': 'data/oof_preds/swin_base_patch4_window12_384_in22k-seed-2626-random_resize.csv',
     'model14': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-4242-random_resize.csv',
     'model15': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-2626-random_resize.csv',
+    'model16': 'data/oof_preds/swin_large_patch4_window7_224_in22k-seed-34-random_resize_pseudo_all.csv',
 }
 
 data_dir = 'data'
