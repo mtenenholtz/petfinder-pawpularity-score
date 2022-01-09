@@ -63,7 +63,7 @@ hparams = {
     'cutmix_alpha': 0.5
 }
 
-for i in range(5):
+for i in range(10):
     if args.fold != -1 and i != args.fold:
         continue
 

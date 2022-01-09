@@ -70,7 +70,7 @@ hparams = {
     'cutmix_alpha': 0.5
 }
 
-n_folds = 5
+n_folds = 10
 for i in range(n_folds):
     if args.fold != -1 and i != args.fold:
         continue
