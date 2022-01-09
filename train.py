@@ -79,7 +79,7 @@ for i in range(5):
 
     ckpt_dirpath = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/' if not in_colab() else '/content/drive/MyDrive/Kaggle/petfinder-pawpularity/ckpts/'
     ckpt = ModelCheckpoint(
-        dirpath='/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/', 
+        dirpath=ckpt_dirpath, 
         monitor='val_rmse_loss', mode='min', 
         filename=f'{args.model_name}-seed-{args.seed}{args.seed}-{args.name}_ten_fold-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
     )
