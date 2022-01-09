@@ -44,7 +44,7 @@ wandb.login()
 
 data_dir = 'data'
 img_path = 'crop' if args.cropped_imgs else 'train'
-train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
+train_df = pd.read_csv(f'{data_dir}/train_folds_10.csv')
 train_df['file_path'] = f'{data_dir}/{img_path}/' + train_df['Id'] + '.jpg'
 
 pseudo_image_names = [f for f in os.listdir('data/pseudo') if f.endswith('-1.jpg')]
@@ -76,7 +76,7 @@ for i in range(n_folds):
         continue
     
     ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts/' if not in_colab() else '/content/drive/MyDrive/Kaggle/petfinder-pawpularity/ckpts/'
-    ckpt_name = f'{args.model_name}-seed-{args.seed}-{args.name}-fold-{i}'
+    ckpt_name = f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold-fold-{i}'
 
     model_paths = [p for p in os.listdir(f'{ckpt_path}/') if p.startswith(ckpt_name)]
     assert len(model_paths) == 1
@@ -120,10 +120,10 @@ for i in range(n_folds):
     ckpt = ModelCheckpoint(
         dirpath=ckpt_path, 
         monitor='val_rmse_loss', mode='min', 
-        filename=f'{args.model_name}-seed-{args.seed}-{args.name}_pseudo_all-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
+        filename=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold_pseudo_all-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
     )
     early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=4)
-    wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model=False, name=f'{args.model_name}-seed-{args.seed}-{args.name}_pseudo-fold-{i}')
+    wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model=False, name=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold_pseudo-fold-{i}')
     wandb_logger.watch(model, log='all')
 
     trainer = pl.Trainer(
