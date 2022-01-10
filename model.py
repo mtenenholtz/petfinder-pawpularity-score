@@ -58,16 +58,21 @@ class PetFinderModel(pl.LightningModule):
             self.train_steps = (self.hparams.epochs * train_batches) // self.hparams.accumulate_grad_batches
 
     def configure_optimizers(self):
-        norm_bias_params, non_norm_bias_params = divide_norm_bias(self)
-        optimizer = torch.optim.AdamW([
-            {'params': norm_bias_params, 'weight_decay': self.hparams.wd},
-            {'params': non_norm_bias_params, 'weight_decay': 0.},
-        ], lr=self.hparams.lr)
-        #optimizer = torch.optim.AdamW(self.parameters(), lr=self.hparams.lr)
+        # norm_bias_params, non_norm_bias_params = divide_norm_bias(self)
+        # optimizer = torch.optim.AdamW([
+        #     {'params': norm_bias_params, 'weight_decay': self.hparams.wd},
+        #     {'params': non_norm_bias_params, 'weight_decay': 0.},
+        # ], lr=self.hparams.lr)
+        optimizer = torch.optim.AdamW(self.parameters(), lr=self.hparams.lr)
         return {
             'optimizer': optimizer,
             'lr_scheduler': {
-                'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-7),
+                #'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-7),
+                'scheduler': torch.optim.lr_scheduler.OneCycleLR(
+                    optimizer, 
+                    max_lr=self.hparams.lr, 
+                    total_steps=self.train_steps, 
+                ),                
                 'monitor': 'val_loss',
                 'interval': 'step'
             }
