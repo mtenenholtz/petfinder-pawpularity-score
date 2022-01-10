@@ -67,12 +67,7 @@ class PetFinderModel(pl.LightningModule):
         return {
             'optimizer': optimizer,
             'lr_scheduler': {
-                #'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-7),
-                'scheduler': torch.optim.lr_scheduler.OneCycleLR(
-                    optimizer, 
-                    max_lr=self.hparams.lr, 
-                    total_steps=self.train_steps, 
-                ),                
+                'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.train_steps, eta_min=1e-7),
                 'monitor': 'val_loss',
                 'interval': 'step'
             }
@@ -124,7 +119,6 @@ class PetFinderModel(pl.LightningModule):
             'val_logits': wandb.Histogram(flattened_preds_np[~np.isnan(flattened_preds_np)]),
             'global_step': self.global_step
         })
-        print('here1')
 
         bce_logits = []
         rmse_logits = []
@@ -134,16 +128,12 @@ class PetFinderModel(pl.LightningModule):
             rmse_logits.append(out['rmse_logits'])
             targets.append(out['targets'])
 
-        print('here2')
         bce_logits, rmse_logits, targets = torch.cat(bce_logits), torch.cat(rmse_logits), torch.cat(targets)
 
         bce_loss = self.bce_loss(bce_logits.squeeze().detach(), targets/100.)
-        print('here3')
         rmse_loss = torch.sqrt(((rmse_logits.squeeze().detach() - targets) ** 2).mean())
-        print('here4')
         self.log('val_bce_loss', bce_loss, prog_bar=True)
         self.log('val_rmse_loss', rmse_loss, prog_bar=True)
-        print('here5')
 
         if self.best_bce_loss is not None:
             if bce_loss < self.best_bce_loss:
