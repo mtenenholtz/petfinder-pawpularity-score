@@ -12,8 +12,8 @@ import cv2
 def get_default_transforms(img_size):
     transform = {
         'train': A.Compose([
-            #A.HorizontalFlip(p=0.5),
-            A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1, p=0.75),
+            A.HorizontalFlip(p=0.5),
+            A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, p=0.5),
             A.SmallestMaxSize(max_size=img_size[0], p=1),
             A.RandomCrop(height=img_size[0], width=img_size[1], p=1),
             A.Normalize(
