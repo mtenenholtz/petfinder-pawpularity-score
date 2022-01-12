@@ -120,7 +120,7 @@ for i in range(n_folds):
     ckpt = ModelCheckpoint(
         dirpath=ckpt_path, 
         monitor='val_rmse_loss', mode='min', 
-        filename=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold_pseudo_onecycle-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
+        filename=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold_pseudo-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
     )
     early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=4)
     wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model=False, name=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold_pseudo-fold-{i}')
