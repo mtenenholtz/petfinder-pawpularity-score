@@ -102,9 +102,7 @@ for i in range(n_folds):
     del ckpt_model
     del dm
     gc.collect()
-    
-    #pseudo_df = pseudo_df[(pseudo_df['Pawpularity'] < 10) | (pseudo_df['Pawpularity'] > 90)]
-    
+        
     train_df_fold = pd.concat([train_df, pseudo_df], ignore_index=True)
 
     train_filter = train_df_fold['fold'] != i

@@ -76,6 +76,10 @@ class Backbone(nn.Module):
             self.out_features = self.net.num_features
         elif 'xcit' in name:
             self.out_features = self.net.num_features
+        elif 'crossvit' in name:
+            self.out_features = self.net.num_features
+        elif 'levit' in name:
+            self.out_features = self.net.num_features
         elif 'vit' in name:
             self.out_features = self.net.head.in_features
         elif name == 'vit_deit_base_distilled_patch16_384':
@@ -98,7 +102,7 @@ class Backbone(nn.Module):
             self.out_features = self.net.head.fc.in_features
 
         else:
-            self.out_features = self.net.classifier.in_features
+            self.out_features = self.net.num_features
 
     def forward(self, x):
         x = self.net.forward_features(x)

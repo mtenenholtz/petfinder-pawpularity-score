@@ -35,56 +35,6 @@ def get_default_transforms(img_size):
             ),
             ToTensorV2()
         ]),
-        'tta': [
-            A.Compose([
-                A.SmallestMaxSize(max_size=img_size[0], p=1.0),
-                A.CenterCrop(height=img_size[0], width=img_size[1], p=1.0),
-                A.Normalize(
-                    mean=[0.485, 0.456, 0.406],
-                    std=[0.229, 0.224, 0.225],
-                    max_pixel_value=255.0,
-                    p=1.0,
-                ),
-                ToTensorV2()
-            ]),
-            A.Compose([
-                A.HorizontalFlip(p=1.0),
-                A.SmallestMaxSize(max_size=img_size[0], p=1.0),
-                A.CenterCrop(height=img_size[0], width=img_size[1], p=1.0),
-                A.Normalize(
-                    mean=[0.485, 0.456, 0.406],
-                    std=[0.229, 0.224, 0.225],
-                    max_pixel_value=255.0,
-                    p=1.0,
-                ),
-                ToTensorV2()
-            ]),
-            A.Compose([
-                A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
-                A.SmallestMaxSize(max_size=img_size[0], p=1.0),
-                A.CenterCrop(height=img_size[0], width=img_size[1], p=1.0),
-                A.Normalize(
-                    mean=[0.485, 0.456, 0.406],
-                    std=[0.229, 0.224, 0.225],
-                    max_pixel_value=255.0,
-                    p=1.0,
-                ),
-                ToTensorV2()
-            ]),
-            A.Compose([
-                A.HorizontalFlip(p=1.0),
-                A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
-                A.SmallestMaxSize(max_size=img_size[0], p=1.0),
-                A.CenterCrop(height=img_size[0], width=img_size[1], p=1.0),
-                A.Normalize(
-                    mean=[0.485, 0.456, 0.406],
-                    std=[0.229, 0.224, 0.225],
-                    max_pixel_value=255.0,
-                    p=1.0,
-                ),
-                ToTensorV2()
-            ]),
-        ]
     }
     return transform
 

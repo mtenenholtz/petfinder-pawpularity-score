@@ -28,18 +28,20 @@ args = parser.parse_args()
 pl.seed_everything(args.seed);
 
 data_dir = 'data'
-train_df = pd.read_csv(f'{data_dir}/train_folds.csv')
+train_df = pd.read_csv(f'{data_dir}/train_folds_10.csv')
 train_df['file_path'] = f'{data_dir}/train/' + train_df['Id'] + '.jpg'
 
-model_paths = [p for p in os.listdir('ckpts/') if p.startswith(args.model_name + '-fold')]
+ckpt_path = '/media/mten/storage/kaggle/petfinder-pawpularity-score/ckpts'
+
+model_paths = [p for p in os.listdir(f'{ckpt_path}/') if p.startswith(args.model_name + '-fold')]
 model_paths = sorted(model_paths)
 [print(p) for p in model_paths]
-assert len(model_paths) == 5
-models = [PetFinderEmbeddingsModel.load_from_checkpoint(f'ckpts/{p}') for p in model_paths]
+assert len(model_paths) == 10
+models = [PetFinderEmbeddingsModel.load_from_checkpoint(f'{ckpt_path}/{p}') for p in model_paths]
 for model in models:
     model.freeze();
 
-for i in range(5):
+for i in range(10):
     pred_df = train_df.loc[train_df['fold'] == i, :]
     dm = DataModule(
         pred_df, img_size=(args.img_size_x, args.img_size_y), 

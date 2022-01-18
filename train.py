@@ -83,7 +83,7 @@ for i in range(10):
         monitor='val_rmse_loss', mode='min', 
         filename=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold-fold-{i}-{{val_bce_loss:.4f}}-{{val_rmse_loss:.4f}}'
     )
-    early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=4)
+    early_stop = EarlyStopping('val_rmse_loss', mode='min', patience=6)
     wandb_logger = WandbLogger(project='petfinder-pawpularity-score', log_model=False, name=f'{args.model_name}-seed-{args.seed}-{args.name}_ten_fold-fold-{i}')
     wandb_logger.watch(model, log='all')
 

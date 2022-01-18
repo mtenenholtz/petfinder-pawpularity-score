@@ -25,7 +25,6 @@ class PetFinderModel(pl.LightningModule):
         self.backbone = Backbone(model_name, pretrained=pretrained, drop_rate=drop_rate, drop_path_rate=drop_path_rate)
         self.global_pool = nn.AdaptiveAvgPool2d(1)
         self.head = nn.Sequential(
-            #nn.Dropout(0.5), 
             nn.Linear(self.backbone.out_features, 1)
         )
 
@@ -40,7 +39,7 @@ class PetFinderModel(pl.LightningModule):
         self.best_bce_loss = None
         self.best_rmse_loss = None
         
-        transformer_models = ['swin', 'vit', 'xcit', 'cait', 'mixer', 'resmlp']
+        transformer_models = ['swin', 'vit', 'xcit', 'cait', 'mixer', 'resmlp', 'crossvit', 'beit']
         if any([t in model_name for t in transformer_models]):
             self.transformer = True
         else:
@@ -63,7 +62,6 @@ class PetFinderModel(pl.LightningModule):
             {'params': norm_bias_params, 'weight_decay': self.hparams.wd},
             {'params': non_norm_bias_params, 'weight_decay': 0.},
         ], lr=self.hparams.lr)
-        # optimizer = torch.optim.AdamW(self.parameters(), lr=self.hparams.lr)
         return {
             'optimizer': optimizer,
             'lr_scheduler': {
@@ -127,11 +125,12 @@ class PetFinderModel(pl.LightningModule):
             bce_logits.append(out['bce_logits'])
             rmse_logits.append(out['rmse_logits'])
             targets.append(out['targets'])
-
+        
         bce_logits, rmse_logits, targets = torch.cat(bce_logits), torch.cat(rmse_logits), torch.cat(targets)
-
+        
         bce_loss = self.bce_loss(bce_logits.squeeze().detach(), targets/100.)
         rmse_loss = torch.sqrt(((rmse_logits.squeeze().detach() - targets) ** 2).mean())
+        
         self.log('val_bce_loss', bce_loss, prog_bar=True)
         self.log('val_rmse_loss', rmse_loss, prog_bar=True)
 
@@ -185,5 +184,41 @@ class PetFinderEmbeddingsModel(PetFinderModel):
         images = batch['images']
 
         logits = self(images)
+
+        return logits.view(logits.shape[0], -1)
+    
+class PetFinderBoostedModel(PetFinderModel):
+    def __init__(
+        self, model_name, epochs, lr, wd, 
+        accumulate_grad_batches, 
+        drop_rate, drop_path_rate,
+        mixup, mixup_p, mixup_alpha,
+        cutmix, cutmix_p, cutmix_alpha,
+        classification=True, 
+        pretrained=False, booster=None
+    ):
+        super().__init__(
+            model_name, epochs, lr, wd, 
+            accumulate_grad_batches, 
+            drop_rate, drop_path_rate,
+            mixup, mixup_p, mixup_alpha,
+            cutmix, cutmix_p, cutmix_alpha,
+            classification, 
+            pretrained
+        )
+        
+        self.booster = booster
+
+    def forward(self, x):
+        emb = self.backbone(x)
+        return emb, self.head(emb)
+
+    def predict_step(self, batch, batch_idx):
+        images = batch['images']
+
+        emb, logits = self(images)
+        booster_logits = self.booster.predict(emb.detach())
+        
+        logits = (logits + booster_logits) / 2
 
         return logits.view(logits.shape[0], -1)
